@@ -24,12 +24,12 @@ export const carReducer = (state = initialState, action) => {
     switch(type) {
         case ADD_FEATURE:
             // Check if feature was already added
-            if(payload.car.features.find(feature => feature.id === payload.id)) {
+            if(state.car.features.find(feature => feature.id === payload.id)) {
                 return state;
             }
             return {
                 ...state,
-                additionalPrice: state.additionalPrice + payload.price;
+                additionalPrice: state.additionalPrice + payload.price,
                 car: {
                     ...state.car,
                     features: [
