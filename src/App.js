@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import Boxes from './components/Boxes';
+import Car from './components/Car';
 
 const App = () => {
   return (
     <Fragment>
-      <Boxes />
+      <Car />
     </Fragment>
   );
 };
