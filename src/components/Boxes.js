@@ -20,7 +20,7 @@ const Boxes = ({ car, additionalFeatures, additionalPrice }) => {
     )
 }
 
-// Receiver the entire state tree as parameter
+// Receive the entire state tree as parameter
 // Return an object with the slices of state that you want/need to access in this component
 const mapStateToProps = state => {
     const { car, additionalFeatures, additionalPrice } = state;
