@@ -15,7 +15,12 @@ const initialState = {
     ]
 }
 
-export default (state = initialState, action) => {
+export const carReducer = (state = initialState, action) => {
+    const { type, payload } = action;
     // Switch case here
     // Return updated state
+    switch(type) {
+        default:
+            return state;
+    }
 }
